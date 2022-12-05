@@ -31,6 +31,22 @@ public class Day3 {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
+        // RULES:
+        // A backpack's contents are represented as a string of random characters
+        // Each character represents a different item
+        // Each item has a priority, which is the character's position in the alphabet
+        // 'a' is 1, 'b' is 2, 'c' is 3, etc.
+        // and 'A' is 27, 'B' is 28, 'C' is 29, etc.
+        // A compartment is half of the backpack, split in the middle of the string
+        // Both compartments in a backpack have a common item
+        // Every 3 backpack represents a group, and every group has a common item
+
+        // OBJECTIVES:
+        // Part 1: Find the common letter in a backpack's compartments, then sum the priorities
+        // of those letters into a total
+        // Part 2: Find the common letter in every group , then sum the priority of those letters
+        // into a total
+
         System.out.println("===Solving for part 1===");
         Scanner scanner = new Scanner(new FileReader("inputs/input3.txt"));
         int sumPriorities = 0;
